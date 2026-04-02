@@ -185,9 +185,28 @@
 
                 <!-- SECTION 2: Calculator -->
                 <section id="calculator" class="calculator-card">
-                    <h2>Percentage Increase/Decrease</h2>
-                    <p>Tool under development.</p>
-                </section>
+
+          <h2>% Increase/Decrease Calculator</h2>
+          <div class="calc-input-group">
+            <label for="p1">Initial Value</label>
+            <input type="number" id="p1" placeholder="e.g. 100">
+          </div>
+          <div class="calc-input-group">
+            <label for="p2">Final Value</label>
+            <input type="number" id="p2" placeholder="e.g. 150">
+          </div>
+          <button class="btn btn-primary" onclick="calculate()">Calculate Change</button>
+
+          <div class="result-display" id="result" style="display:none;">
+            <div class="result-number" id="resultValue"></div>
+            <div class="result-sentence" id="resultSentence"></div>
+            <div class="result-actions">
+              <button onclick="copyResult()">📋 Copy Result</button>
+              <button onclick="downloadPDF()">📄 Download PDF</button>
+            </div>
+          </div>
+
+        </section>
 
                 <!-- AD SLOT AFTER CALCULATOR -->
                 <div class="ad-slot ad-rectangle">

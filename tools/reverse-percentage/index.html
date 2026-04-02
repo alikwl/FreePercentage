@@ -185,9 +185,35 @@
 
                 <!-- SECTION 2: Calculator -->
                 <section id="calculator" class="calculator-card">
-                    <h2>Reverse Percentage Calculator</h2>
-                    <p>Tool under development.</p>
-                </section>
+
+          <h2>Reverse Percentage Calculator</h2>
+          <div class="calc-input-group">
+            <label for="p1">Final Value</label>
+            <input type="number" id="p1" placeholder="e.g. 120">
+          </div>
+          <div class="calc-input-group">
+            <label for="p2">Percentage Applied (%)</label>
+            <input type="number" id="p2" placeholder="e.g. 20">
+          </div>
+          <div class="calc-input-group" style="display: flex; flex-direction: column;">
+            <label for="type">Operation Type</label>
+            <select id="type" style="padding: 10px; width: 100%; border: 1px solid var(--border); border-radius: var(--radius); font-size: 1rem; background: var(--white); color: var(--text);">
+                <option value="increase">This was an Increase (Added)</option>
+                <option value="decrease">This was a Decrease (Subtracted)</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" onclick="calculate()">Find Original Value</button>
+
+          <div class="result-display" id="result" style="display:none;">
+            <div class="result-number" id="resultValue"></div>
+            <div class="result-sentence" id="resultSentence"></div>
+            <div class="result-actions">
+              <button onclick="copyResult()">📋 Copy Result</button>
+              <button onclick="downloadPDF()">📄 Download PDF</button>
+            </div>
+          </div>
+
+        </section>
 
                 <!-- AD SLOT AFTER CALCULATOR -->
                 <div class="ad-slot ad-rectangle">

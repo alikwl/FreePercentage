@@ -226,6 +226,8 @@ img {
   transition: var(--transition);
   padding: 10px 0;
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
 .has-dropdown:hover .dropdown {

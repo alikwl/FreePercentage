@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Increment Calculator | Free Percentage Calculators</title>
+    <meta name="description"
+        content="Calculate GST in seconds. Add GST to get the final price, or remove GST from a GST-inclusive price. Supports 5%, 12%, 18%, 28% rates. Free.">
+    <meta name="keywords"
+        content="free online GST calculator with 18 percent rate, GST calculator, calculate GST amount, reverse GST calculator, GST inclusive vs exclusive">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Free GST Calculator | FreePercentage.com">
+    <meta property="og:description"
+        content="Easily add or remove GST from any amount. Supports all major GST slabs for instant calculation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freepercentage.com/tools/gst-calculator/">
+    <meta property="og:image" content="https://freepercentage.com/assets/og-image.png">
+
+    <link rel="canonical" href="https://freepercentage.com/tools/gst-calculator/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/style.css">
+
+    <!-- JSON-LD SCHEMA -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GST Calculator",
+        "operatingSystem": "All",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://freepercentage.com/tools/gst-calculator/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1520" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate GST",
+        "step": [
+          { "@type": "HowToStep", "name": "Enter Amount", "text": "Enter the base amount or the total inclusive amount." },
+          { "@type": "HowToStep", "name": "Select GST Rate", "text": "Choose the applicable GST slab (e.g., 18%) from the dropdown." },
+          { "@type": "HowToStep", "name": "Choose Mode", "text": "Select 'Add GST' to find the total, or 'Remove GST' to find the base price." },
+          { "@type": "HowToStep", "name": "Calculate", "text": "Click the calculate button to get the GST amount and final total." }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is GST?",
+            "acceptedAnswer": { "@type": "Answer", "text": "GST (Goods and Services Tax) is an indirect tax applied to the supply of goods and services. It is a destination-based tax collected at the point of consumption." }
+          },
+          {
+            "@type": "Question",
+            "name": "How to calculate 18% GST?",
+            "acceptedAnswer": { "@type": "Answer", "text": "To add 18% GST, multiply the base amount by 0.18 to get the GST amount, then add it to the original base amount." }
+          },
+          {
+            "@type": "Question",
+            "name": "How to reverse GST?",
+            "acceptedAnswer": { "@type": "Answer", "text": "To find the base price from a GST-inclusive amount, divide the total amount by (1 + (GST rate/100)). For example, for 18% GST, divide the total by 1.18." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the GST slabs in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Common GST slabs include 0% (essential goods), 5%, 12%, 18%, and 28% (luxury/sin goods)." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GST same everywhere?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No, GST structures vary by country. Some use a single VAT system, while others (like India) have a dual GST structure (CGST and SGST)." }
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../../" class="logo">
+                <span class="logo-icon">%</span>
+                <span class="logo-text">FreePercentage<span class="logo-dot">.com</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#">Educational Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="../../tools/marks-percentage/">Marks Percentage</a></li>
+                            <li><a href="../../tools/final-grade/">Final Grade Calculator</a></li>
+                            <li><a href="../../tools/decimal-to-percent/">Decimal to Percent</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Finance Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="../../tools/profit-margin/">Profit Margin</a></li>
+                            <li><a href="../../tools/gst-calculator/">GST Calculator</a></li>
+                            <li><a href="../../tools/discount-calculator/">Discount Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Growth Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="../../tools/percentage-increase-decrease/">% Increase/Decrease</a></li>
+                            <li><a href="../../tools/percentage-difference/">% Difference</a></li>
+                            <li><a href="../../tools/reverse-percentage/">Reverse Percentage</a></li>
+                            <li><a href="../../tools/percentage-of-percentage/">% of a Percentage</a></li>
+                            <li><a href="../../tools/salary-increment/">Salary Increment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="../../"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="#"><span itemprop="name">Finance Tools</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">GST Calculator</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Tool Hero -->
+        <section class="tool-hero">
+            <div class="container">
+                <h1>Salary Increment Calculator</h1>
+                <p>Quickly calculate GST for any amount using standard slabs (5%, 12%, 18%, 28%) or a custom rate.</p>
+            </div>
+        </section>
+
+        <div class="container tool-layout">
+            <div class="tool-main">
+
+                <!-- TABLE OF CONTENTS -->
+                <div class="toc-box">
+                    <strong>On This Page:</strong>
+                    <ol>
+                        <li><a href="#calculator">Use the GST Calculator</a></li>
+                        <li><a href="#how-it-works">How GST Calculation Works</a></li>
+                        <li><a href="#formula">GST Formulas</a></li>
+                        <li><a href="#examples">Calculation Examples</a></li>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                    </ol>
+                </div>
+
+                <!-- AD SLOT TOP -->
+                <div class="ad-slot ad-banner">
+                    <p>Advertisement</p>
+                    <!-- AdSense Code Here -->
+                </div>
+
+                <!-- SECTION 2: Calculator -->
+                <section id="calculator" class="calculator-card">
+                    <h2>Salary Increment Calculator</h2>
+                    <p>Tool under development.</p>
+                </section>
+
+                <!-- AD SLOT AFTER CALCULATOR -->
+                <div class="ad-slot ad-rectangle">
+                    <p>Advertisement</p>
+                    <!-- AdSense Code Here -->
+                </div>
+
+                <!-- SECTION 3: How It Works -->
+                <section id="how-it-works" class="content-section">
+                    <h2>How to Calculate GST?</h2>
+                    <p>GST (Goods and Services Tax) calculation depends on whether the price provided is
+                        <strong>exclusive</strong> of tax (you need to add tax) or <strong>inclusive</strong> of tax
+                        (you need to find the base price).
+                    </p>
+                    <p>When you "Add GST," you are calculating the tax on top of the net price. When you "Remove GST,"
+                        you are working backwards from the final price to find out how much was the original product
+                        cost before the government's tax was added. This is essential for accounting, invoicing, and
+                        auditing business expenses.</p>
+                </section>
+
+                <!-- SECTION 4: Formula -->
+                <section id="formula" class="content-section">
+                    <h2>GST Calculation Formulas</h2>
+
+                    <p><strong>1. Adding GST (Exclusive to Inclusive):</strong></p>
+                    <div class="formula-box">
+                        GST Amount = (Amount × GST Rate) ÷ 100
+                    </div>
+                    <div class="formula-box">
+                        Total Price = Amount + GST Amount
+                    </div>
+
+                    <p><strong>2. Removing GST (Inclusive to Exclusive):</strong></p>
+                    <div class="formula-box">
+                        Original Price = Amount ÷ (1 + (GST Rate ÷ 100))
+                    </div>
+                    <div class="formula-box">
+                        GST Amount = Total Amount − Original Price
+                    </div>
+                </section>
+
+                <!-- SECTION 5: Step-by-Step Example -->
+                <section id="examples" class="content-section">
+                    <h2>GST Calculation Examples</h2>
+                    <p><strong>Example 1: Adding 18% GST to $1,000</strong></p>
+                    <div class="steps-container">
+                        <div class="step"><span class="step-num">1</span> GST Amount: (1000 × 18) ÷ 100 =
+                            <strong>$180</strong>.
+                        </div>
+                        <div class="step"><span class="step-num">2</span> Total Price: 1000 + 180 =
+                            <strong>$1,180</strong>.
+                        </div>
+                    </div>
+
+                    <p class="mt-2"><strong>Example 2: Removing 18% GST from $1,180</strong></p>
+                    <div class="steps-container">
+                        <div class="step"><span class="step-num">1</span> Original Price: 1180 ÷ 1.18 =
+                            <strong>$1,000</strong>.
+                        </div>
+                        <div class="step"><span class="step-num">2</span> GST Amount: 1180 - 1000 =
+                            <strong>$180</strong>.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: FAQ -->
+                <section id="faq" class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">What is GST? <span>▾</span></div>
+                        <div class="faq-answer">GST stands for Goods and Services Tax. It is a value-added tax levied on
+                            most goods and services sold for domestic consumption.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How to calculate 18% GST? <span>▾</span></div>
+                        <div class="faq-answer">Simply multiply your base amount by 0.18. For example, for $100, the GST
+                            is $18. The total including GST would be $118.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How to reverse GST? <span>▾</span></div>
+                        <div class="faq-answer">To find the amount before tax, divide the total price by (1 + tax rate).
+                            For 18%, divide by 1.18.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are the GST slabs in India? <span>▾</span></div>
+                        <div class="faq-answer">The standard slabs are 0% (exempt), 5%, 12%, 18%, and 28%.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Is GST same everywhere? <span>▾</span></div>
+                        <div class="faq-answer">No, GST rates and regulations vary by country. Always check your local
+                            tax laws for the most accurate rates.</div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: Embed Code -->
+                <section class="embed-section">
+                    <h3>Embed This GST Calculator on Your Website</h3>
+                    <p>Copy the code below to add this free calculator to your site:</p>
+                    <div class="embed-box">
+                        <code
+                            id="embedCode">&lt;iframe src="https://freepercentage.com/tools/gst-calculator/" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code>
+                        <button onclick="copyEmbed()">Copy Code</button>
+                    </div>
+                </section>
+
+                <!-- SECTION 8: Related Tools -->
+                <section class="related-tools">
+                    <h3>Other Useful Calculators</h3>
+                    <div class="related-grid">
+                        <a href="../../tools/profit-margin/" class="related-card">Profit Margin Calculator</a>
+                        <a href="../../tools/discount-calculator/" class="related-card">Discount Calculator</a>
+                        <a href="../../tools/reverse-percentage/" class="related-card">Reverse Percentage</a>
+                    </div>
+                </section>
+
+            </div><!-- /.tool-main -->
+        </div><!-- /.container -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>About FreePercentage.com</h3>
+                <p>Your trusted source for free, fast, and accurate percentage calculators. Built for students,
+                    professionals, and businesses worldwide.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Popular Tools</h3>
+                <ul>
+                    <li><a href="../../tools/marks-percentage/">Marks Percentage Calculator</a></li>
+                    <li><a href="../../tools/discount-calculator/">Discount Calculator</a></li>
+                    <li><a href="../../tools/profit-margin/">Profit Margin Calculator</a></li>
+                    <li><a href="../../tools/gst-calculator/">GST Calculator</a></li>
+                    <li><a href="../../tools/salary-increment/">Salary Increment Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="../../terms-of-service/">Terms of Service</a></li>
+                    <li><a href="../../disclaimer/">Disclaimer</a></li>
+                    <li><a href="../../about/">About Us</a></li>
+                    <li><a href="../../contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FreePercentage.com | All Rights Reserved. | Free online percentage calculators for everyone.</p>
+        </div>
+    </footer>
+
+    <script src="../../assets/script.js"></script>
+    <script>
+        function toggleCustomRate() {
+            const select = document.getElementById('gstRate');
+            const customInput = document.getElementById('customRate');
+            customInput.style.display = select.value === 'custom' ? 'block' : 'none';
+        }
+
+        function calculate() {
+            const amount = parseFloat(document.getElementById('amount').value);
+            let rate = document.getElementById('gstRate').value;
+
+            if (rate === 'custom') {
+                rate = document.getElementById('customRate').value;
+            }
+            rate = parseFloat(rate);
+
+            const mode = document.querySelector('input[name="mode"]:checked').value;
+
+            if (isNaN(amount) || isNaN(rate)) {
+                alert('Please enter a valid amount and GST rate.');
+                return;
+            }
+
+            let gstAmt, total, original;
+
+            if (mode === 'add') {
+                gstAmt = (amount * rate / 100).toFixed(2);
+                total = (amount + parseFloat(gstAmt)).toFixed(2);
+                document.getElementById('resultValue').textContent = `$${total}`;
+                document.getElementById('resultSentence').textContent =
+                    `Base Price: $${amount.toFixed(2)} | GST (${rate}%): $${gstAmt} | Total with GST: $${total}`;
+            } else {
+                original = (amount / (1 + rate / 100)).toFixed(2);
+                gstAmt = (amount - parseFloat(original)).toFixed(2);
+                document.getElementById('resultValue').textContent = `$${original}`;
+                document.getElementById('resultSentence').textContent =
+                    `GST-Exclusive Price: $${original} | GST Amount (${rate}%): $${gstAmt} | GST-Inclusive: $${amount.toFixed(2)}`;
+            }
+
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('whatsappShare').href =
+                `https://wa.me/?text=I calculated GST using FreePercentage.com! Result: ${document.getElementById('resultSentence').textContent}`;
+        }
+
+        function downloadPDF() {
+            const result = document.getElementById('resultSentence').textContent;
+            const tool = document.title.split(' -')[0];
+            const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`],
+                { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'gst-calculation-result.txt';
+            a.click();
+        }
+    </script>
+</body>
+
+</html>

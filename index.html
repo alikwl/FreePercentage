@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Percentage Calculator — Online Tools | FreePercentage.com</title>
+  <meta name="description"
+    content="Calculate percentages instantly with our free online tools. Marks calculator, discount finder, profit margin, GST, and 10+ more calculators. No signup required.">
+  <meta name="keywords"
+    content="free percentage calculator, percentage calculator online, marks percentage, discount calculator, profit margin calculator, gst calculator">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Free Percentage Calculator | FreePercentage.com">
+  <meta property="og:description"
+    content="10+ free percentage tools for students, businesses & finance. Fast, accurate, and no signup required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freepercentage.com/">
+  <meta property="og:image" content="https://freepercentage.com/assets/og-image.png">
+
+  <link rel="canonical" href="https://freepercentage.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- JSON-LD SCHEMA -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FreePercentage.com",
+      "url": "https://freepercentage.com",
+      "description": "Free online percentage calculators for students, businesses, and finance professionals.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://freepercentage.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">%</span>
+        <span class="logo-text">FreePercentage<span class="logo-dot">.com</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li class="has-dropdown">
+            <a href="#">Educational Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/marks-percentage/">Marks Percentage</a></li>
+              <li><a href="/tools/final-grade/">Final Grade Calculator</a></li>
+              <li><a href="/tools/decimal-to-percent/">Decimal to Percent</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Finance Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/profit-margin/">Profit Margin</a></li>
+              <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+              <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Growth Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/percentage-increase-decrease/">% Increase/Decrease</a></li>
+              <li><a href="/tools/percentage-difference/">% Difference</a></li>
+              <li><a href="/tools/reverse-percentage/">Reverse Percentage</a></li>
+              <li><a href="/tools/percentage-of-percentage/">% of a Percentage</a></li>
+              <li><a href="/tools/salary-increment/">Salary Increment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Free Percentage Calculator — Fast, Accurate & Online</h1>
+          <p>10+ free percentage tools for students, businesses & finance. No signup. No ads blocking your results.</p>
+
+          <!-- Quick Calculator Widget -->
+          <div class="quick-calc-widget">
+            <div class="qc-inner">
+              <div class="qc-group">
+                <label>What is</label>
+                <input type="number" id="qc-percent" placeholder="Percentage (e.g. 20)">
+                <span>% of</span>
+                <input type="number" id="qc-value" placeholder="Value (e.g. 500)">
+                <button class="btn btn-primary" onclick="quickCalculate()">Calculate</button>
+              </div>
+              <div id="qc-result" class="qc-result" style="display: none;">
+                Result: <span id="qc-res-val">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-btns">
+            <a href="#tools-section" class="btn btn-primary">Explore All Tools</a>
+            <a href="/tools/marks-percentage/" class="btn btn-outline">Most Popular: Marks Calculator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Slot 1 -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard">
+        <p>Advertisement</p>
+        <!-- AdSense Code Here -->
+      </div>
+    </div>
+
+    <!-- Tools Grid Section -->
+    <section id="tools-section" class="tools-grid-section">
+      <div class="container">
+        <h2 class="section-title text-center">All Free Percentage Calculators</h2>
+        <div class="tools-grid">
+          <!-- Tool 1 -->
+          <a href="/tools/marks-percentage/" class="tool-card">
+            <span class="tool-icon">🎓</span>
+            <h3>Marks Percentage</h3>
+            <p>Calculate your exam percentage from total marks effortlessly.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 2 -->
+          <a href="/tools/final-grade/" class="tool-card">
+            <span class="tool-icon">📝</span>
+            <h3>Final Grade Calculator</h3>
+            <p>Find out what you need on your final exam to reach your target grade.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 3 -->
+          <a href="/tools/decimal-to-percent/" class="tool-card">
+            <span class="tool-icon">🔢</span>
+            <h3>Decimal to Percent</h3>
+            <p>Quickly convert any decimal number into a percentage value.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 4 -->
+          <a href="/tools/profit-margin/" class="tool-card">
+            <span class="tool-icon">💰</span>
+            <h3>Profit Margin</h3>
+            <p>Calculate gross profit, margin percentage, and markup for business.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 5 -->
+          <a href="/tools/gst-calculator/" class="tool-card">
+            <span class="tool-icon">🏦</span>
+            <h3>GST Calculator</h3>
+            <p>Add or remove GST (5%, 12%, 18%, 28%) from any amount instantly.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 6 -->
+          <a href="/tools/discount-calculator/" class="tool-card">
+            <span class="tool-icon">🏷️</span>
+            <h3>Discount Calculator</h3>
+            <p>Find the final sale price and total savings after a discount.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 7 -->
+          <a href="/tools/percentage-increase-decrease/" class="tool-card">
+            <span class="tool-icon">📈</span>
+            <h3>% Increase/Decrease</h3>
+            <p>Track growth or decline between two numbers accurately.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 8 -->
+          <a href="/tools/percentage-difference/" class="tool-card">
+            <span class="tool-icon">⚖️</span>
+            <h3>% Difference</h3>
+            <p>Compare two values to find the symmetric percentage difference.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 9 -->
+          <a href="/tools/reverse-percentage/" class="tool-card">
+            <span class="tool-icon">⏪</span>
+            <h3>Reverse Percentage</h3>
+            <p>Find the original value before a percentage was added or removed.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 10 -->
+          <a href="/tools/percentage-of-percentage/" class="tool-card">
+            <span class="tool-icon">🎯</span>
+            <h3>% of a Percentage</h3>
+            <p>Solve nested percentage problems (e.g., what is 10% of 50%?).</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+          <!-- Tool 11 -->
+          <a href="/tools/salary-increment/" class="tool-card">
+            <span class="tool-icon">💵</span>
+            <h3>Salary Increment</h3>
+            <p>Calculate your new salary after a percentage hike or raise.</p>
+            <span class="tool-link">Use Free Tool →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Use Us Section -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title text-center">Why 50,000+ Users Trust FreePercentage.com</h2>
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Results</h3>
+            <p>No waiting, no loading screens. Get your results the moment you click calculate.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>Our tools are fully responsive and work perfectly on smartphones and tablets.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🔒</div>
+            <h3>No Signup</h3>
+            <p>Your privacy matters. Use any of our 10+ tools without creating an account.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">💯</div>
+            <h3>100% Free</h3>
+            <p>Every single calculator on this platform is completely free for everyone, forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Slot 2 -->
+    <div class="container">
+      <div class="ad-slot ad-rectangle">
+        <p>Advertisement</p>
+        <!-- AdSense Code Here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>About FreePercentage.com</h3>
+        <p>Your trusted source for free, fast, and accurate percentage calculators. Built for students, professionals,
+          and businesses worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul>
+          <li><a href="/tools/marks-percentage/">Marks Percentage Calculator</a></li>
+          <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+          <li><a href="/tools/profit-margin/">Profit Margin Calculator</a></li>
+          <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+          <li><a href="/tools/salary-increment/">Salary Increment Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FreePercentage.com | All Rights Reserved. | Free online percentage calculators for everyone.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+  <script>
+    function quickCalculate() {
+      const p = parseFloat(document.getElementById('qc-percent').value);
+      const v = parseFloat(document.getElementById('qc-value').value);
+      const resDiv = document.getElementById('qc-result');
+      const resVal = document.getElementById('qc-res-val');
+
+      if (!isNaN(p) && !isNaN(v)) {
+        const result = (p / 100) * v;
+        resVal.textContent = result.toLocaleString(undefined, { maximumFractionDigits: 2 });
+        resDiv.style.display = 'block';
+      } else {
+        alert('Please enter both percentage and value');
+      }
+    }
+  </script>
+</body>
+
+</html>

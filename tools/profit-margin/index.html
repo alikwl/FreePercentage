@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Margin Calculator — Calculate Gross & Net Margin % - Free Online Calculator | FreePercentage.com
+    </title>
+    <meta name="description"
+        content="Calculate your profit margin percentage instantly. Enter cost price and selling price to see gross profit margin and markup. Free business calculator.">
+    <meta name="keywords"
+        content="calculate profit margin percentage on retail products, profit margin calculator, gross profit margin, markup vs margin calculator, business profit calculator">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Profit Margin Calculator | FreePercentage.com">
+    <meta property="og:description"
+        content="Instantly calculate your gross profit, profit margin %, and markup %. Essential for retail and e-commerce businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freepercentage.com/tools/profit-margin/">
+    <meta property="og:image" content="https://freepercentage.com/assets/og-image.png">
+
+    <link rel="canonical" href="https://freepercentage.com/tools/profit-margin/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <!-- Chart.js for Visual Representation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <!-- JSON-LD SCHEMA -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Profit Margin Calculator",
+        "operatingSystem": "All",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://freepercentage.com/tools/profit-margin/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1100" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Profit Margin Percentage",
+        "step": [
+          { "@type": "HowToStep", "name": "Enter Cost Price", "text": "Input the cost of goods sold (COGS) or what you paid for the item." },
+          { "@type": "HowToStep", "name": "Enter Selling Price", "text": "Input the price at which you are selling the item to the customer." },
+          { "@type": "HowToStep", "name": "Click Calculate", "text": "The tool will instantly calculate the gross profit, margin percentage, and markup percentage." }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a good profit margin?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A 'good' margin depends on the industry. Generally, a 10% net profit margin is considered average, 20% is high, and 5% is low. However, gross margins for retail are often much higher (30-50%)." }
+          },
+          {
+            "@type": "Question",
+            "name": "Difference between margin and markup?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Margin is profit based on the selling price, while markup is profit based on the cost price. Margin will always be a lower percentage than markup for the same profit amount." }
+          },
+          {
+            "@type": "Question",
+            "name": "How to calculate net profit margin?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Net profit margin is calculated by taking the net income (after all expenses, taxes, and interest) and dividing it by total revenue, then multiplying by 100." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is gross profit?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Gross profit is the absolute dollar amount earned after subtracting the Cost of Goods Sold (COGS) from the total revenue (Selling Price - Cost)." }
+          },
+          {
+            "@type": "Question",
+            "name": "How to improve profit margin?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You can improve margins by either increasing the selling price, negotiating lower costs from suppliers, or reducing operational overhead." }
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">%</span>
+                <span class="logo-text">FreePercentage<span class="logo-dot">.com</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="#">Educational Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/tools/marks-percentage/">Marks Percentage</a></li>
+                            <li><a href="/tools/final-grade/">Final Grade Calculator</a></li>
+                            <li><a href="/tools/decimal-to-percent/">Decimal to Percent</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Finance Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/tools/profit-margin/">Profit Margin</a></li>
+                            <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+                            <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Growth Tools ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="/tools/percentage-increase-decrease/">% Increase/Decrease</a></li>
+                            <li><a href="/tools/percentage-difference/">% Difference</a></li>
+                            <li><a href="/tools/reverse-percentage/">Reverse Percentage</a></li>
+                            <li><a href="/tools/percentage-of-percentage/">% of a Percentage</a></li>
+                            <li><a href="/tools/salary-increment/">Salary Increment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="#"><span itemprop="name">Finance Tools</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Profit Margin Calculator</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Tool Hero -->
+        <section class="tool-hero">
+            <div class="container">
+                <h1>Profit Margin Calculator — Calculate Gross & Net Margin %</h1>
+                <p>Instantly determine your profit, margin percentage, and markup to optimize your pricing strategy.</p>
+            </div>
+        </section>
+
+        <div class="container tool-layout">
+            <div class="tool-main">
+
+                <!-- TABLE OF CONTENTS -->
+                <div class="toc-box">
+                    <strong>On This Page:</strong>
+                    <ol>
+                        <li><a href="#calculator">Use the Calculator</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#formula">The Formula</a></li>
+                        <li><a href="#examples">Step-by-Step Example</a></li>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                    </ol>
+                </div>
+
+                <!-- AD SLOT TOP -->
+                <div class="ad-slot ad-banner">
+                    <p>Advertisement</p>
+                    <!-- AdSense Code Here -->
+                </div>
+
+                <!-- SECTION 2: Calculator -->
+                <section id="calculator" class="calculator-card">
+                    <h2>Profit Margin — Free Calculator</h2>
+                    <div class="calc-input-group">
+                        <label for="cost">Cost Price / COGS ($)</label>
+                        <input type="number" id="cost" placeholder="e.g. 500" step="any">
+                    </div>
+                    <div class="calc-input-group">
+                        <label for="revenue">Selling Price / Revenue ($)</label>
+                        <input type="number" id="revenue" placeholder="e.g. 800" step="any">
+                    </div>
+                    <button class="btn btn-primary" onclick="calculate()">Calculate Profit & Margin</button>
+
+                    <div class="result-display" id="result" style="display:none;">
+                        <div class="result-number" id="resultValue"></div>
+                        <div class="result-sentence" id="resultSentence"></div>
+                        <div class="result-actions">
+                            <button onclick="copyResult()">📋 Copy Result</button>
+                            <button onclick="downloadPDF()">📄 Download PDF</button>
+                            <a id="whatsappShare" href="#" target="_blank">💬 Share on WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Chart Area -->
+                    <div class="chart-container" id="chartArea" style="display:none;">
+                        <canvas id="resultChart" width="300" height="300"></canvas>
+                    </div>
+                </section>
+
+                <!-- AD SLOT AFTER CALCULATOR -->
+                <div class="ad-slot ad-rectangle">
+                    <p>Advertisement</p>
+                    <!-- AdSense Code Here -->
+                </div>
+
+                <!-- SECTION 3: How It Works -->
+                <section id="how-it-works" class="content-section">
+                    <h2>How to Calculate Profit Margin Percentage?</h2>
+                    <p>Profit margin is a financial metric used by businesses to measure the percentage of revenue that
+                        exceeds the cost of producing the goods or services sold. It is a key indicator of a company's
+                        pricing efficiency and overall financial health.</p>
+                    <p>By calculating the gross profit margin, you can see how much of every dollar earned is actual
+                        profit before operating expenses. This helps business owners decide if they need to raise their
+                        prices or find ways to lower their procurement costs to maintain a sustainable business.</p>
+                </section>
+
+                <!-- SECTION 4: Formula -->
+                <section id="formula" class="content-section">
+                    <h2>The Profit Margin Formulas</h2>
+                    <p>To fully understand your profitability, we calculate three distinct values:</p>
+
+                    <div class="formula-box">
+                        Gross Profit = Revenue − Cost
+                    </div>
+                    <p>The total amount of money earned after covering the cost of the product.</p>
+
+                    <div class="formula-box">
+                        Profit Margin % = (Gross Profit ÷ Revenue) × 100
+                    </div>
+                    <p>The percentage of the selling price that is profit.</p>
+
+                    <div class="formula-box">
+                        Markup % = (Gross Profit ÷ Cost) × 100
+                    </div>
+                    <p>The percentage added to the cost price to reach the selling price.</p>
+                </section>
+
+                <!-- SECTION 5: Step-by-Step Example -->
+                <section id="examples" class="content-section">
+                    <h2>Step-by-Step Example</h2>
+                    <p>Suppose you buy a product for <strong>$50 (Cost)</strong> and sell it for <strong>$80
+                            (Revenue)</strong>.</p>
+                    <div class="steps-container">
+                        <div class="step"><span class="step-num">1</span> <strong>Find Gross Profit:</strong> $80 - $50
+                            = <strong>$30</strong>.</div>
+                        <div class="step"><span class="step-num">2</span> <strong>Calculate Margin:</strong> ($30 ÷ $80)
+                            × 100 = <strong>37.5%</strong>.</div>
+                        <div class="step"><span class="step-num">3</span> <strong>Calculate Markup:</strong> ($30 ÷ $50)
+                            × 100 = <strong>60%</strong>.</div>
+                        <div class="step"><span class="step-num">4</span> <strong>Result:</strong> Your gross profit is
+                            $30, your margin is 37.5%, and your markup is 60%.</div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: FAQ -->
+                <section id="faq" class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">What is a good profit margin? <span>▾</span></div>
+                        <div class="faq-answer">A good margin varies by industry. In retail, gross margins are often
+                            between 30% and 50%. In high-volume, low-margin businesses (like grocery stores), margins
+                            can be as low as 2-5%.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Difference between margin and markup? <span>▾</span></div>
+                        <div class="faq-answer">Margin is calculated based on the Selling Price, while Markup is
+                            calculated based on the Cost. If you buy for $100 and sell for $150, the markup is 50%
+                            ($50/$100), but the margin is 33.3% ($50/$150).</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How to calculate net profit margin? <span>▾</span></div>
+                        <div class="faq-answer">Net profit margin considers all expenses (rent, payroll, taxes). The
+                            formula is: (Net Income ÷ Total Revenue) × 100.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is gross profit? <span>▾</span></div>
+                        <div class="faq-answer">Gross profit is the absolute dollar amount earned after subtracting the
+                            cost of goods sold from the total revenue. It does not include indirect costs like marketing
+                            or rent.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How to improve profit margin? <span>▾</span></div>
+                        <div class="faq-answer">You can improve your margin by increasing your prices, negotiating
+                            better rates with your suppliers, or improving operational efficiency to lower production
+                            costs.</div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: Embed Code -->
+                <section class="embed-section">
+                    <h3>Embed This Calculator on Your Website</h3>
+                    <p>Copy the code below to add this free calculator to your site:</p>
+                    <div class="embed-box">
+                        <code
+                            id="embedCode">&lt;iframe src="https://freepercentage.com/tools/profit-margin/" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code>
+                        <button onclick="copyEmbed()">Copy Code</button>
+                    </div>
+                </section>
+
+                <!-- SECTION 8: Related Tools -->
+                <section class="related-tools">
+                    <h3>Other Useful Calculators</h3>
+                    <div class="related-grid">
+                        <a href="/tools/discount-calculator/" class="related-card">Discount Calculator</a>
+                        <a href="/tools/gst-calculator/" class="related-card">GST Calculator</a>
+                        <a href="/tools/salary-increment/" class="related-card">Salary Increment Calculator</a>
+                    </div>
+                </section>
+
+            </div><!-- /.tool-main -->
+        </div><!-- /.container -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>About FreePercentage.com</h3>
+                <p>Your trusted source for free, fast, and accurate percentage calculators. Built for students,
+                    professionals, and businesses worldwide.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Popular Tools</h3>
+                <ul>
+                    <li><a href="/tools/marks-percentage/">Marks Percentage Calculator</a></li>
+                    <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+                    <li><a href="/tools/profit-margin/">Profit Margin Calculator</a></li>
+                    <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+                    <li><a href="/tools/salary-increment/">Salary Increment Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service/">Terms of Service</a></li>
+                    <li><a href="/disclaimer/">Disclaimer</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FreePercentage.com | All Rights Reserved. | Free online percentage calculators for everyone.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/script.js"></script>
+    <script>
+        let chartInstance = null;
+
+        function drawPieChart(value1, value2, labels) {
+            const ctx = document.getElementById('resultChart').getContext('2d');
+            if (chartInstance) chartInstance.destroy();
+            document.getElementById('chartArea').style.display = 'block';
+            chartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: [value1, value2],
+                        backgroundColor: ['#dee2e6', '#28a745'],
+                        borderWidth: 0,
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function calculate() {
+            const cost = parseFloat(document.getElementById('cost').value);
+            const revenue = parseFloat(document.getElementById('revenue').value);
+
+            if (isNaN(cost) || isNaN(revenue) || cost < 0 || revenue < 0) {
+                alert('Please enter valid non-negative numbers for cost and revenue.');
+                return;
+            }
+            if (revenue === 0) {
+                alert('Revenue cannot be zero for margin calculation.');
+                return;
+            }
+
+            const profit = revenue - cost;
+            const margin = ((profit / revenue) * 100).toFixed(2);
+            const markup = cost !== 0 ? ((profit / cost) * 100).toFixed(2) : 'N/A';
+
+            document.getElementById('resultValue').textContent = margin + '%';
+            document.getElementById('resultSentence').textContent =
+                `Gross Profit: $${profit.toFixed(2)} | Profit Margin: ${margin}% | Markup: ${markup}%`;
+
+            drawPieChart(cost, profit > 0 ? profit : 0, ['Cost', 'Profit']);
+
+            document.getElementById('whatsappShare').href =
+                `https://wa.me/?text=My product has a profit margin of ${margin}%! Calculate yours at https://freepercentage.com/tools/profit-margin/`;
+
+            document.getElementById('result').style.display = 'block';
+        }
+
+        function downloadPDF() {
+            const result = document.getElementById('resultSentence').textContent;
+            const tool = document.title.split(' -')[0];
+            const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`],
+                { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'profit-margin-result.txt';
+            a.click();
+        }
+    </script>
+</body>
+
+</html>

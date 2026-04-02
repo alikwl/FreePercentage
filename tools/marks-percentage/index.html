@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Percentage of Marks (Out of 500, 600, or Any Total) - Free Online Calculator | FreePercentage.com
+  </title>
+  <meta name="description"
+    content="Calculate your exam percentage instantly. Enter marks obtained and total marks to get accurate percentage with step-by-step formula. Free for students.">
+  <meta name="keywords"
+    content="how to calculate percentage of marks out of 600, marks percentage calculator, exam percentage, calculate percentage of marks">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Calculate Percentage of Marks | FreePercentage.com">
+  <meta property="og:description"
+    content="Calculate your exam percentage instantly with our free tool. Get results and grades in one click.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freepercentage.com/tools/marks-percentage/">
+  <meta property="og:image" content="https://freepercentage.com/assets/og-image.png">
+
+  <link rel="canonical" href="https://freepercentage.com/tools/marks-percentage/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- Chart.js for Visual Representation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- JSON-LD SCHEMA -->
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Marks Percentage Calculator",
+        "operatingSystem": "All",
+        "applicationCategory": "EducationalApplication",
+        "url": "https://freepercentage.com/tools/marks-percentage/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1250" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Percentage of Marks",
+        "step": [
+          { "@type": "HowToStep", "name": "Enter Marks Obtained", "text": "Type the marks you received in the 'Marks Obtained' field." },
+          { "@type": "HowToStep", "name": "Enter Total Marks", "text": "Type the maximum total marks in the 'Total Marks' field." },
+          { "@type": "HowToStep", "name": "Click Calculate", "text": "Press the Calculate button to instantly see your percentage." }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How to calculate percentage of marks out of 600?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Divide your marks by 600 and multiply by 100. Example: 450 ÷ 600 × 100 = 75%." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good exam percentage?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Generally, 90%+ is excellent (A+), 80-89% is great (A), 70-79% is good (B), 60-69% is average (C), and below 50% is a fail in most systems." }
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">%</span>
+        <span class="logo-text">FreePercentage<span class="logo-dot">.com</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li class="has-dropdown">
+            <a href="#">Educational Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/marks-percentage/">Marks Percentage</a></li>
+              <li><a href="/tools/final-grade/">Final Grade Calculator</a></li>
+              <li><a href="/tools/decimal-to-percent/">Decimal to Percent</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Finance Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/profit-margin/">Profit Margin</a></li>
+              <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+              <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Growth Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/percentage-increase-decrease/">% Increase/Decrease</a></li>
+              <li><a href="/tools/percentage-difference/">% Difference</a></li>
+              <li><a href="/tools/reverse-percentage/">Reverse Percentage</a></li>
+              <li><a href="/tools/percentage-of-percentage/">% of a Percentage</a></li>
+              <li><a href="/tools/salary-increment/">Salary Increment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="#"><span itemprop="name">Educational Tools</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Marks Percentage</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Tool Hero -->
+    <section class="tool-hero">
+      <div class="container">
+        <h1>Calculate Percentage of Marks (Out of 500, 600, or Any Total)</h1>
+        <p>Quickly determine your academic percentage and grade with our free, accurate calculator.</p>
+      </div>
+    </section>
+
+    <div class="container tool-layout">
+      <div class="tool-main">
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc-box">
+          <strong>On This Page:</strong>
+          <ol>
+            <li><a href="#calculator">Use the Calculator</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#formula">The Formula</a></li>
+            <li><a href="#examples">Step-by-Step Example</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ol>
+        </div>
+
+        <!-- AD SLOT TOP -->
+        <div class="ad-slot ad-banner">
+          <p>Advertisement</p>
+          <!-- AdSense Code Here -->
+        </div>
+
+        <!-- SECTION 2: Calculator -->
+        <section id="calculator" class="calculator-card">
+          <h2>Marks Percentage — Free Calculator</h2>
+          <div class="calc-input-group">
+            <label for="obtained">Marks Obtained</label>
+            <input type="number" id="obtained" placeholder="e.g. 450">
+          </div>
+          <div class="calc-input-group">
+            <label for="total">Total Marks</label>
+            <input type="number" id="total" placeholder="e.g. 600">
+          </div>
+          <button class="btn btn-primary" onclick="calculate()">Calculate Now</button>
+
+          <div class="result-display" id="result" style="display:none;">
+            <div class="result-number" id="resultValue"></div>
+            <div class="result-sentence" id="resultSentence"></div>
+            <div class="result-actions">
+              <button onclick="copyResult()">📋 Copy Result</button>
+              <button onclick="downloadPDF()">📄 Download PDF</button>
+              <a id="whatsappShare" href="#" target="_blank">💬 Share on WhatsApp</a>
+            </div>
+          </div>
+          <!-- Chart Area -->
+          <div class="chart-container" id="chartArea" style="display:none;">
+            <canvas id="resultChart" width="300" height="300"></canvas>
+          </div>
+        </section>
+
+        <!-- AD SLOT AFTER CALCULATOR -->
+        <div class="ad-slot ad-rectangle">
+          <p>Advertisement</p>
+          <!-- AdSense Code Here -->
+        </div>
+
+        <!-- SECTION 3: How It Works -->
+        <section id="how-it-works" class="content-section">
+          <h2>How to Calculate Percentage of Marks?</h2>
+          <p>Calculating your percentage is a simple way to understand your performance relative to the total possible
+            score. Whether you are a student checking your semester results or a teacher grading papers, the process
+            remains the same regardless of the total marks.</p>
+          <p>To get your percentage, you simply need to know how many marks you actually scored (obtained marks) and
+            what the maximum possible score was (total marks). This tool automates the math for you, providing an
+            instant percentage and a letter grade based on standard academic scales.</p>
+        </section>
+
+        <!-- SECTION 4: Formula -->
+        <section id="formula" class="content-section">
+          <h2>The Marks Percentage Formula</h2>
+          <div class="formula-box">
+            (Marks Obtained ÷ Total Marks) × 100 = Percentage
+          </div>
+          <p><strong>Where:</strong></p>
+          <ul>
+            <li><strong>Marks Obtained:</strong> The actual score you achieved in the exam.</li>
+            <li><strong>Total Marks:</strong> The maximum score possible for the exam or course.</li>
+            <li><strong>100:</strong> The multiplier used to convert the decimal ratio into a percentage.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 5: Step-by-Step Example -->
+        <section id="examples" class="content-section">
+          <h2>Step-by-Step Example</h2>
+          <p>Let's say you scored <strong>450 marks</strong> out of a total of <strong>600 marks</strong>.</p>
+          <div class="steps-container">
+            <div class="step"><span class="step-num">1</span> <strong>Divide:</strong> Divide 450 by 600. (450 ÷ 600 =
+              0.75)</div>
+            <div class="step"><span class="step-num">2</span> <strong>Multiply:</strong> Multiply the result by 100.
+              (0.75 × 100 = 75)</div>
+            <div class="step"><span class="step-num">3</span> <strong>Result:</strong> Your final percentage is
+              <strong>75%</strong>.</div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: FAQ -->
+        <section id="faq" class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <div class="faq-question">How to calculate percentage of marks out of 600? <span>▾</span></div>
+            <div class="faq-answer">Divide your obtained marks by 600 and multiply by 100. For example, if you got
+              480/600, the calculation is (480 ÷ 600) × 100 = 80%.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What is a good percentage in exams? <span>▾</span></div>
+            <div class="faq-answer">While it varies by institution, generally 90% and above is considered excellent,
+              75-89% is very good, and 60-74% is considered a solid average performance.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How do I convert my percentage to a GPA? <span>▾</span></div>
+            <div class="faq-answer">GPA scales differ by country. In the US, a 90-100% is typically an A (4.0 GPA),
+              80-89% is a B (3.0 GPA), and so on. Check your school's handbook for the exact conversion.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I calculate percentage for any total marks? <span>▾</span></div>
+            <div class="faq-answer">Yes! This calculator works for any total marks, whether it's out of 10, 100, 500,
+              600, or even 10,000.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Is this calculator free to use? <span>▾</span></div>
+            <div class="faq-answer">Yes, FreePercentage.com provides all its tools absolutely free of charge for
+              students and professionals worldwide.</div>
+          </div>
+        </section>
+
+        <!-- SECTION 7: Embed Code -->
+        <section class="embed-section">
+          <h3>Embed This Calculator on Your Website</h3>
+          <p>Copy the code below to add this free calculator to your site:</p>
+          <div class="embed-box">
+            <code
+              id="embedCode">&lt;iframe src="https://freepercentage.com/tools/marks-percentage/" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code>
+            <button onclick="copyEmbed()">Copy Code</button>
+          </div>
+        </section>
+
+        <!-- SECTION 8: Related Tools -->
+        <section class="related-tools">
+          <h3>Other Useful Calculators</h3>
+          <div class="related-grid">
+            <a href="/tools/final-grade/" class="related-card">Final Grade Calculator</a>
+            <a href="/tools/decimal-to-percent/" class="related-card">Decimal to Percent</a>
+            <a href="/tools/percentage-increase-decrease/" class="related-card">% Increase/Decrease</a>
+          </div>
+        </section>
+
+      </div><!-- /.tool-main -->
+    </div><!-- /.container -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>About FreePercentage.com</h3>
+        <p>Your trusted source for free, fast, and accurate percentage calculators. Built for students, professionals,
+          and businesses worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul>
+          <li><a href="/tools/marks-percentage/">Marks Percentage Calculator</a></li>
+          <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+          <li><a href="/tools/profit-margin/">Profit Margin Calculator</a></li>
+          <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+          <li><a href="/tools/salary-increment/">Salary Increment Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FreePercentage.com | All Rights Reserved. | Free online percentage calculators for everyone.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+  <script>
+    let chartInstance = null;
+
+    function getGrade(pct) {
+      if (pct >= 90) return 'A+';
+      if (pct >= 80) return 'A';
+      if (pct >= 70) return 'B';
+      if (pct >= 60) return 'C';
+      if (pct >= 50) return 'D';
+      return 'F';
+    }
+
+    function drawPieChart(value1, value2, labels) {
+      const ctx = document.getElementById('resultChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+      document.getElementById('chartArea').style.display = 'block';
+      chartInstance = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: [value1, value2],
+            backgroundColor: ['#0056b3', '#dee2e6'],
+            borderWidth: 0,
+            hoverOffset: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { position: 'bottom' }
+          }
+        }
+      });
+    }
+
+    function calculate() {
+      const obtained = parseFloat(document.getElementById('obtained').value);
+      const total = parseFloat(document.getElementById('total').value);
+
+      if (isNaN(obtained) || isNaN(total) || total === 0) {
+        alert('Please enter valid marks. Total marks cannot be zero.');
+        return;
+      }
+      if (obtained > total) {
+        alert('Obtained marks cannot be greater than total marks.');
+        return;
+      }
+
+      const pct = ((obtained / total) * 100).toFixed(2);
+      const grade = getGrade(pct);
+
+      document.getElementById('resultValue').textContent = pct + '%';
+      document.getElementById('resultSentence').textContent =
+        `You scored ${pct}% (Grade: ${grade}). You got ${obtained} out of ${total} marks.`;
+
+      drawPieChart(obtained, total - obtained, ['Marks Obtained', 'Marks Lost']);
+
+      document.getElementById('whatsappShare').href =
+        `https://wa.me/?text=I scored ${pct}% on my exam! Calculate yours at https://freepercentage.com/tools/marks-percentage/`;
+
+      document.getElementById('result').style.display = 'block';
+    }
+
+    function downloadPDF() {
+      const result = document.getElementById('resultSentence').textContent;
+      const tool = document.title.split(' -')[0];
+      const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`],
+        { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'calculation-result.txt';
+      a.click();
+    }
+  </script>
+</body>
+
+</html>

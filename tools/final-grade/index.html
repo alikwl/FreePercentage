@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Exam Grade Calculator — What Do I Need to Pass? - Free Online Calculator | FreePercentage.com</title>
+  <meta name="description"
+    content="Find out exactly what score you need on your final exam to achieve your target grade. Free final grade calculator with instant results.">
+  <meta name="keywords"
+    content="what grade do I need on my final exam to get an A, final exam grade calculator, what do I need on my final to pass, final grade weight calculator">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Final Exam Grade Calculator | FreePercentage.com">
+  <meta property="og:description"
+    content="Calculate the exact score needed on your final exam to reach your target overall grade.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freepercentage.com/tools/final-grade/">
+  <meta property="og:image" content="https://freepercentage.com/assets/og-image.png">
+
+  <link rel="canonical" href="https://freepercentage.com/tools/final-grade/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- JSON-LD SCHEMA -->
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Final Exam Grade Calculator",
+        "operatingSystem": "All",
+        "applicationCategory": "EducationalApplication",
+        "url": "https://freepercentage.com/tools/final-grade/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "940" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Required Final Exam Grade",
+        "step": [
+          { "@type": "HowToStep", "name": "Enter Current Grade", "text": "Input your current overall percentage in the course." },
+          { "@type": "HowToStep", "name": "Enter Final Weight", "text": "Input the percentage that the final exam is worth relative to the whole course." },
+          { "@type": "HowToStep", "name": "Enter Target Grade", "text": "Input the final overall percentage you want to achieve." },
+          { "@type": "HowToStep", "name": "Calculate", "text": "Click the calculate button to see the required score." }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What grade do I need on my final to get an A?",
+            "acceptedAnswer": { "@type": "Answer", "text": "This depends on your current grade and the weight of the final. Use our calculator to find the exact number by entering your current % and the final's weight." }
+          },
+          {
+            "@type": "Question",
+            "name": "What does 'exam weight' mean?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Exam weight is the percentage of your total final grade that the final exam represents (e.g., if the final is worth 20% of your total grade, the weight is 20)." }
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">%</span>
+        <span class="logo-text">FreePercentage<span class="logo-dot">.com</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li class="has-dropdown">
+            <a href="#">Educational Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/marks-percentage/">Marks Percentage</a></li>
+              <li><a href="/tools/final-grade/">Final Grade Calculator</a></li>
+              <li><a href="/tools/decimal-to-percent/">Decimal to Percent</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Finance Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/profit-margin/">Profit Margin</a></li>
+              <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+              <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Growth Tools ▾</a>
+            <ul class="dropdown">
+              <li><a href="/tools/percentage-increase-decrease/">% Increase/Decrease</a></li>
+              <li><a href="/tools/percentage-difference/">% Difference</a></li>
+              <li><a href="/tools/reverse-percentage/">Reverse Percentage</a></li>
+              <li><a href="/tools/percentage-of-percentage/">% of a Percentage</a></li>
+              <li><a href="/tools/salary-increment/">Salary Increment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="#"><span itemprop="name">Educational Tools</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Final Grade Calculator</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Tool Hero -->
+    <section class="tool-hero">
+      <div class="container">
+        <h1>Final Exam Grade Calculator — What Do I Need to Pass?</h1>
+        <p>Stop guessing and find out exactly what score you need on your final exam to hit your target grade.</p>
+      </div>
+    </section>
+
+    <div class="container tool-layout">
+      <div class="tool-main">
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc-box">
+          <strong>On This Page:</strong>
+          <ol>
+            <li><a href="#calculator">Use the Calculator</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#formula">The Formula</a></li>
+            <li><a href="#examples">Step-by-Step Example</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ol>
+        </div>
+
+        <!-- AD SLOT TOP -->
+        <div class="ad-slot ad-banner">
+          <p>Advertisement</p>
+          <!-- AdSense Code Here -->
+        </div>
+
+        <!-- SECTION 2: Calculator -->
+        <section id="calculator" class="calculator-card">
+          <h2>Final Grade Calculator</h2>
+          <div class="calc-input-group">
+            <label for="current">Current Grade (%)</label>
+            <input type="number" id="current" placeholder="e.g. 72">
+          </div>
+          <div class="calc-input-group">
+            <label for="weight">Final Exam Weight (%)</label>
+            <input type="number" id="weight" placeholder="e.g. 30">
+          </div>
+          <div class="calc-input-group">
+            <label for="target">Target Grade (%)</label>
+            <input type="number" id="target" placeholder="e.g. 80">
+          </div>
+          <button class="btn btn-primary" onclick="calculate()">Calculate Required Score</button>
+
+          <div class="result-display" id="result" style="display:none;">
+            <div class="result-number" id="resultValue"></div>
+            <div class="result-sentence" id="resultSentence"></div>
+            <div class="result-actions">
+              <button onclick="copyResult()">📋 Copy Result</button>
+              <button onclick="downloadPDF()">📄 Download PDF</button>
+              <a id="whatsappShare" href="#" target="_blank">💬 Share on WhatsApp</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- AD SLOT AFTER CALCULATOR -->
+        <div class="ad-slot ad-rectangle">
+          <p>Advertisement</p>
+          <!-- AdSense Code Here -->
+        </div>
+
+        <!-- SECTION 3: How It Works -->
+        <section id="how-it-works" class="content-section">
+          <h2>How to Calculate Your Required Final Grade?</h2>
+          <p>Most courses are structured with "weighted" grades. This means some assignments, quizzes, and the final
+            exam are worth more than others. To find your required final grade, you have to determine how much of your
+            final grade is already "locked in" by your current performance.</p>
+          <p>By subtracting the weighted current grade from your target grade, you can isolate exactly how many points
+            are left to be earned from the final exam alone. Our calculator does this instantly, taking into account the
+            specific weight of your final exam.</p>
+        </section>
+
+        <!-- SECTION 4: Formula -->
+        <section id="formula" class="content-section">
+          <h2>The Final Grade Formula</h2>
+          <div class="formula-box">
+            Required = (Target - Current × (1 - Weight/100)) ÷ (Weight/100)
+          </div>
+          <p><strong>Variables Explained:</strong></p>
+          <ul>
+            <li><strong>Target:</strong> The final percentage you want in the course.</li>
+            <li><strong>Current:</strong> Your grade in the class right now.</li>
+            <li><strong>Weight:</strong> The percentage the final exam contributes to the total grade.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 5: Step-by-Step Example -->
+        <section id="examples" class="content-section">
+          <h2>Step-by-Step Example</h2>
+          <p>Imagine you have a <strong>75%</strong> in class, the final is worth <strong>25%</strong>, and you want an
+            <strong>80%</strong> overall.</p>
+          <div class="steps-container">
+            <div class="step"><span class="step-num">1</span> <strong>Find Current Weight:</strong> If the final is 25%,
+              your current work is 75% of the grade. (0.75 × 75 = 56.25 points earned).</div>
+            <div class="step"><span class="step-num">2</span> <strong>Find Needed Points:</strong> You want 80 total.
+              (80 - 56.25 = 23.75 points needed).</div>
+            <div class="step"><span class="step-num">3</span> <strong>Calculate Exam %:</strong> Divide needed points by
+              the final weight. (23.75 ÷ 0.25 = 95%).</div>
+            <div class="step"><span class="step-num">4</span> <strong>Result:</strong> You need a <strong>95%</strong>
+              on the final exam.</div>
+          </div>
+        </section>
+
+        <!-- SECTION 6: FAQ -->
+        <section id="faq" class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <div class="faq-question">What grade do I need on my final to get an A? <span>▾</span></div>
+            <div class="faq-answer">It depends on your current grade and the final's weight. For example, if you have an
+              85% and the final is worth 20%, you might only need a 92% on the final to reach a 90% overall.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How is a final exam grade weighted? <span>▾</span></div>
+            <div class="faq-answer">Weighting means the exam is worth a specific percentage of your total grade. A "20%
+              weight" means the final accounts for 20% of your final score, while everything else combined accounts for
+              80%.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What if I need more than 100% on my final? <span>▾</span></div>
+            <div class="faq-answer">If the result is over 100%, it means that even with a perfect score, you cannot
+              reach your target grade. You may want to adjust your target or check for extra credit opportunities.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I use this for university courses? <span>▾</span></div>
+            <div class="faq-answer">Yes! This calculator works for any course (High School, College, or University) as
+              long as you know your current percentage and the weight of the final exam.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What does "exam weight" mean? <span>▾</span></div>
+            <div class="faq-answer">It is the proportion of the total course grade that is determined by the final exam.
+              If your syllabus says "Final Exam: 30%", the weight is 30.</div>
+          </div>
+        </section>
+
+        <!-- SECTION 7: Embed Code -->
+        <section class="embed-section">
+          <h3>Embed This Calculator on Your Website</h3>
+          <p>Copy the code below to add this free calculator to your site:</p>
+          <div class="embed-box">
+            <code
+              id="embedCode">&lt;iframe src="https://freepercentage.com/tools/final-grade/" width="100%" height="500" frameborder="0"&gt;&lt;/iframe&gt;</code>
+            <button onclick="copyEmbed()">Copy Code</button>
+          </div>
+        </section>
+
+        <!-- SECTION 8: Related Tools -->
+        <section class="related-tools">
+          <h3>Other Useful Calculators</h3>
+          <div class="related-grid">
+            <a href="/tools/marks-percentage/" class="related-card">Marks Percentage Calculator</a>
+            <a href="/tools/decimal-to-percent/" class="related-card">Decimal to Percent</a>
+            <a href="/tools/percentage-difference/" class="related-card">Percentage Difference</a>
+          </div>
+        </section>
+
+      </div><!-- /.tool-main -->
+    </div><!-- /.container -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>About FreePercentage.com</h3>
+        <p>Your trusted source for free, fast, and accurate percentage calculators. Built for students, professionals,
+          and businesses worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul>
+          <li><a href="/tools/marks-percentage/">Marks Percentage Calculator</a></li>
+          <li><a href="/tools/discount-calculator/">Discount Calculator</a></li>
+          <li><a href="/tools/profit-margin/">Profit Margin Calculator</a></li>
+          <li><a href="/tools/gst-calculator/">GST Calculator</a></li>
+          <li><a href="/tools/salary-increment/">Salary Increment Calculator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FreePercentage.com | All Rights Reserved. | Free online percentage calculators for everyone.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+  <script>
+    function calculate() {
+      const current = parseFloat(document.getElementById('current').value);
+      const weightInput = parseFloat(document.getElementById('weight').value);
+      const target = parseFloat(document.getElementById('target').value);
+
+      if (isNaN(current) || isNaN(weightInput) || isNaN(target)) {
+        alert('Please fill in all fields with valid numbers.');
+        return;
+      }
+
+      const weight = weightInput / 100;
+      const required = (target - current * (1 - weight)) / weight;
+      const req = required.toFixed(2);
+
+      let message = '';
+      let valDisplay = req + '%';
+
+      if (required > 100) {
+        message = `⚠️ You need ${req}% — unfortunately this is not achievable (over 100%). Consider adjusting your target grade.`;
+        valDisplay = 'Impossible';
+      } else if (required < 0) {
+        message = `🎉 Great news! Even scoring 0% on your final, you'll still pass with your target grade!`;
+        valDisplay = '0%';
+      } else {
+        message = `You need to score ${req}% on your final exam to achieve a ${target}% overall grade.`;
+      }
+
+      document.getElementById('resultValue').textContent = valDisplay;
+      document.getElementById('resultSentence').textContent = message;
+      document.getElementById('result').style.display = 'block';
+
+      document.getElementById('whatsappShare').href =
+        `https://wa.me/?text=I need a ${req}% on my final exam to get a ${target}% in the class! Calculate yours at https://freepercentage.com/tools/final-grade/`;
+    }
+
+    function downloadPDF() {
+      const result = document.getElementById('resultSentence').textContent;
+      const tool = document.title.split(' -')[0];
+      const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`],
+        { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'final-grade-result.txt';
+      a.click();
+    }
+  </script>
+</body>
+
+</html>

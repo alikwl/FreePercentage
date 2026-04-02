@@ -365,60 +365,49 @@
 
     <script src="../../assets/script.js"></script>
     <script>
-        function toggleCustomRate() {
-            const select = document.getElementById('gstRate');
-            const customInput = document.getElementById('customRate');
-            customInput.style.display = select.value === 'custom' ? 'block' : 'none';
-        }
+    let chartInstance = null;
+    function drawPieChart(value1, value2, labels) {
+      const ctx = document.getElementById('resultChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+      document.getElementById('chartArea').style.display = 'block';
+      chartInstance = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: labels,
+          datasets: [{ data: [value1, value2], backgroundColor: ['#0056b3', '#28a745'], borderWidth: 0, hoverOffset: 8 }]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+      });
+    }
 
-        function calculate() {
-            const amount = parseFloat(document.getElementById('amount').value);
-            let rate = document.getElementById('gstRate').value;
+    function calculate() {
+      const p1 = parseFloat(document.getElementById('p1').value);
+      const p2 = parseFloat(document.getElementById('p2').value);
 
-            if (rate === 'custom') {
-                rate = document.getElementById('customRate').value;
-            }
-            rate = parseFloat(rate);
+      if (isNaN(p1) || isNaN(p2)) {
+        alert('Please enter valid numbers.');
+        return;
+      }
 
-            const mode = document.querySelector('input[name="mode"]:checked').value;
+      const incrementAmt = p1 * (p2 / 100);
+      const newSalary = p1 + incrementAmt;
 
-            if (isNaN(amount) || isNaN(rate)) {
-                alert('Please enter a valid amount and GST rate.');
-                return;
-            }
+      document.getElementById('resultValue').textContent = newSalary.toLocaleString(undefined, {maximumFractionDigits: 2});
+      document.getElementById('resultSentence').textContent = `Congratulations! A ${p2}% hike gives you an increment of ${incrementAmt.toLocaleString(undefined, {maximumFractionDigits: 2})}. Your new total salary will be ${newSalary.toLocaleString(undefined, {maximumFractionDigits: 2})}.`;
 
-            let gstAmt, total, original;
+      drawPieChart(p1, incrementAmt, ['Base Salary', 'Increment Amount']);
+      document.getElementById('result').style.display = 'block';
+    }
 
-            if (mode === 'add') {
-                gstAmt = (amount * rate / 100).toFixed(2);
-                total = (amount + parseFloat(gstAmt)).toFixed(2);
-                document.getElementById('resultValue').textContent = `$${total}`;
-                document.getElementById('resultSentence').textContent =
-                    `Base Price: $${amount.toFixed(2)} | GST (${rate}%): $${gstAmt} | Total with GST: $${total}`;
-            } else {
-                original = (amount / (1 + rate / 100)).toFixed(2);
-                gstAmt = (amount - parseFloat(original)).toFixed(2);
-                document.getElementById('resultValue').textContent = `$${original}`;
-                document.getElementById('resultSentence').textContent =
-                    `GST-Exclusive Price: $${original} | GST Amount (${rate}%): $${gstAmt} | GST-Inclusive: $${amount.toFixed(2)}`;
-            }
-
-            document.getElementById('result').style.display = 'block';
-            document.getElementById('whatsappShare').href =
-                `https://wa.me/?text=I calculated GST using FreePercentage.com! Result: ${document.getElementById('resultSentence').textContent}`;
-        }
-
-        function downloadPDF() {
-            const result = document.getElementById('resultSentence').textContent;
-            const tool = document.title.split(' -')[0];
-            const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`],
-                { type: 'text/plain' });
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'gst-calculation-result.txt';
-            a.click();
-        }
+    function downloadPDF() {
+      const result = document.getElementById('resultSentence').textContent;
+      const tool = document.title.split(' -')[0];
+      const blob = new Blob([`${tool}\n\nResult: ${result}\n\nCalculated at FreePercentage.com`], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'calculation-result.txt';
+      a.click();
+    }
     </script>
 </body>
-
 </html>
